@@ -28,11 +28,6 @@ namespace Business.Concrete
             return _productDal.GetAll();
         }
 
-        public List<Product> GetAllByCategory(int categoryId)
-        {
-            return _productDal.GetAllByCategory(categoryId);
-        }
-
         public void Update(Product product)
         {
             _productDal.Update(product);
