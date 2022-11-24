@@ -50,13 +50,13 @@ namespace DataAccess.Concrete.InMemory
         public void Update(Product product)
         {
             Product productToUpdate = null;
-            productToUpdate = (Product)(from p in _products
-                              where p.ProductId == product.ProductId
-                              select p);
+            productToUpdate = _products.SingleOrDefault(p => p.ProductId == product.ProductId);
 
             productToUpdate.ProductName = product.ProductName;
             productToUpdate.UnitPrice= product.UnitPrice;
             productToUpdate.UnitsInStock= product.UnitsInStock;
+
+            Console.WriteLine("Updated");
         }
     }
 }
