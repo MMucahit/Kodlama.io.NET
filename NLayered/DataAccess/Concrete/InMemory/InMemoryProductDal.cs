@@ -40,13 +40,6 @@ namespace DataAccess.Concrete.InMemory
             return _products;
         }
 
-        public List<Product> GetAllByCategory(int categoryId)
-        {
-            return (List<Product>)(from p in _products
-                   where p.CategoryId == categoryId
-                   select p).ToList();
-        }
-
         public void Update(Product product)
         {
             Product productToUpdate = null;
