@@ -10,3 +10,6 @@ C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\Entities\obj\Debug\net6.0\
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\Entities\bin\Debug\net6.0\Core.dll
+C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\Entities\bin\Debug\net6.0\Core.pdb
+C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\Entities\obj\Debug\net6.0\Entities.csproj.CopyComplete

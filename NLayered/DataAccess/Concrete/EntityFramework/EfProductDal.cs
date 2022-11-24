@@ -51,7 +51,7 @@ namespace DataAccess.Concrete.EntityFramework
             {
                 // ternary  
                 return filter==null 
-                    ? context.Set<Product>().ToList()
+                    ?context.Set<Product>().ToList()
                     :context.Set<Product>().Where(filter).ToList(); 
             }
         }

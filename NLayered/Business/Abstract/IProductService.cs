@@ -11,5 +11,6 @@ namespace Business.Abstract
     {
         List<Product> GetAll();
         void Update(Product product);
+        List<Product> GetAllByCategoryId(int id);
     }
 }

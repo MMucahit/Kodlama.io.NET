@@ -1,20 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 
 ProductManager productManager = new ProductManager(new InMemoryProductDal());
 
-foreach (var item in productManager.GetAll())
+foreach (var item in productManager.GetAllByCategoryId(1))
 {
-    Console.WriteLine(item.ProductName);
-}
-
-Console.WriteLine("-------------");
-
-foreach (var item in productManager.GetAllByCategory(1))
-{
-    Console.WriteLine(item.ProductId.ToString() + " " + item.ProductName);
+    Console.WriteLine(item.CategoryId.ToString() + "-" + item.ProductName);
 }
 
 Console.WriteLine("-------------");
