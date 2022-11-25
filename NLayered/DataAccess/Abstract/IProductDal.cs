@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,6 @@ namespace DataAccess.Abstract
     // İnterface in kendisi değildir.
     public interface IProductDal:IEntityRepository<Product>
     {
-        
+        List<ProductDetailDto> GetProductDetails();
     }
 }

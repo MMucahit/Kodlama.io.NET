@@ -4,22 +4,45 @@ using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 
-ProductManager productManager = new ProductManager(new InMemoryProductDal());
-
-foreach (var item in productManager.GetAllByCategoryId(1))
+ProductTest();
+//CategoryTest();
+//CustomerTest();
+static void ProductTest()
 {
-    Console.WriteLine(item.CategoryId.ToString() + "-" + item.ProductName);
+    ProductManager productManager = new ProductManager(new EfProductDal());
+
+    foreach (var item in productManager.GetAllByCategoryId(1))
+    {
+        Console.WriteLine(item.CategoryId.ToString() + "-" + item.ProductName);
+    }
+
+    Console.WriteLine("------DTO------");
+
+    foreach (var item in productManager.GetProductDetails())
+    {
+        Console.WriteLine(item.CategoryName + "-" + item.ProductName);
+    }
+
 }
-
-Console.WriteLine("-------------");
-
-Product product = new Product
+static void CategoryTest()
 {
-    ProductId = 1,
-    CategoryId = 1,
-    ProductName = "Asus",
-    UnitPrice = 17500,
-    UnitsInStock = 16
-};
+    CategoryManager categoryManager = new CategoryManager(new EfCategoryDal());
 
-productManager.Update(product);
+    foreach (var item in categoryManager.GetAllByCategoryId(1))
+    {
+        Console.WriteLine(item.CategoryId.ToString() + "-" + item.CategoryName);
+    }
+    Console.WriteLine("--------------");
+
+}
+static void CustomerTest()
+{
+    CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+
+    foreach (var item in customerManager.GetAllByCategoryId(1))
+    {
+        Console.WriteLine(item.CustomerId.ToString() + "-" + item.ContactName);
+    }
+    Console.WriteLine("--------------");
+
+}

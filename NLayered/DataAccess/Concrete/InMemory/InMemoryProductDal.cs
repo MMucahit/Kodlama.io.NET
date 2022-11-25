@@ -1,5 +1,6 @@
 ﻿using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,6 +47,11 @@ namespace DataAccess.Concrete.InMemory
             return (List<Product>)(filter == null
                 ? _products.ToList()
                 : _products.Where(filter.Compile()).ToList());
+        }
+
+        public List<ProductDetailDto> GetProductDetails()
+        {
+            return new List<ProductDetailDto> { };
         }
 
         public void Update(Product product)
