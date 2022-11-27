@@ -1,8 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Business.Concrete;
+using Core.Utilities.Result;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
+using Entities.DTOs;
 
 ProductTest();
 //CategoryTest();
@@ -11,16 +13,25 @@ static void ProductTest()
 {
     ProductManager productManager = new ProductManager(new EfProductDal());
 
-    foreach (var item in productManager.GetAllByCategoryId(1))
+    foreach (var item in productManager.GetAllByCategoryId(1).Data)
     {
         Console.WriteLine(item.CategoryId.ToString() + "-" + item.ProductName);
     }
 
     Console.WriteLine("------DTO------");
 
-    foreach (var item in productManager.GetProductDetails())
+    var result = productManager.GetProductDetails();
+
+    if (result.Success == true)
     {
-        Console.WriteLine(item.CategoryName + "-" + item.ProductName);
+        foreach(var item in result.Data)
+        {
+            Console.WriteLine(item.CategoryName + "-" + item.ProductName);
+        }
+    }
+    else
+    {
+        Console.WriteLine(result.Message);
     }
 
 }

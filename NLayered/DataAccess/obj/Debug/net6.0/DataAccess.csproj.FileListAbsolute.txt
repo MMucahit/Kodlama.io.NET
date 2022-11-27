@@ -1,7 +1,9 @@
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\DataAccess.dll
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\Core.dll
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\Entities.dll
+C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\Core.pdb
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\Entities.pdb
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
@@ -13,5 +15,3 @@ C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\obj\Debug\net6.
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
-C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\Core.dll
-C:\Users\MMucahitNAS\Desktop\NLayeredProject\NLayered\DataAccess\bin\Debug\net6.0\Core.pdb

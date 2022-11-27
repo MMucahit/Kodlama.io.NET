@@ -48,25 +48,49 @@ namespace Business.Concrete
             return new SuccessResult();
         }
 
-        public List<Product> GetAll()
+        public IDataResult<List<Product>> GetAll()
         {
             // İş kodları (Yetkisi var mı gibi.)
-            return _productDal.GetAll();
+            //if("if Someting happen" == "")
+            //{
+            //    return new ErrorDataResult<List<Product>>();
+            //}
+            
+            return new SuccessDataResult<List<Product>>
+                (_productDal.GetAll(),true, Messages.ProductListed);
         }
 
-        public List<Product> GetAllByCategoryId(int id)
+        public IDataResult<List<Product>> GetAllByCategoryId(int id)
         {
-            return _productDal.GetAll(p => p.CategoryId == id);
+            //if ("if Someting happen" == "")
+            //{
+            //    return new ErrorDataResult<List<Product>>();
+            //}
+
+            return new SuccessDataResult<List<Product>>
+                (_productDal.GetAll(p => p.CategoryId == id), true, Messages.ProductListed);
         }
 
-        public Product GetById(int productId)
+        public IDataResult<Product> GetById(int productId)
         {
-            return _productDal.Get(p => p.ProductId == productId);
+            //if ("if Someting happen" == "")
+            //{
+            //    return new ErrorDataResult<Product>();
+            //}
+
+            return new SuccessDataResult<Product>
+                (_productDal.Get(p => p.ProductId == productId), true, Messages.ProductListed);
         }
 
-        public List<ProductDetailDto> GetProductDetails()
+        public IDataResult<List<ProductDetailDto>> GetProductDetails()
         {
-            return _productDal.GetProductDetails();
+            //if ("if Someting happen" == "")
+            //{
+            //    return new ErrorDataResult<List<ProductDetailDto>>();
+            //}
+
+            return new SuccessDataResult<List<ProductDetailDto>>
+                (_productDal.GetProductDetails(),true, Messages.ProductListed);
         }
 
     }
