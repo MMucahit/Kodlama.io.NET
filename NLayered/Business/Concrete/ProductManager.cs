@@ -2,14 +2,8 @@
 using Business.Constants;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
-using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
 using Entities.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
@@ -55,9 +49,9 @@ namespace Business.Concrete
             //{
             //    return new ErrorDataResult<List<Product>>();
             //}
-            
+
             return new SuccessDataResult<List<Product>>
-                (_productDal.GetAll(),true, Messages.ProductListed);
+                (_productDal.GetAll(), true, Messages.ProductListed);
         }
 
         public IDataResult<List<Product>> GetAllByCategoryId(int id)
@@ -90,8 +84,13 @@ namespace Business.Concrete
             //}
 
             return new SuccessDataResult<List<ProductDetailDto>>
-                (_productDal.GetProductDetails(),true, Messages.ProductListed);
+                (_productDal.GetProductDetails(), true, Messages.ProductListed);
         }
 
+        public IResult Delete(Product product)
+        {
+            _productDal.Delete(product);
+            return new SuccessResult("Delete");
+        }
     }
 }

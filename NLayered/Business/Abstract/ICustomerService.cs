@@ -1,16 +1,15 @@
-﻿using Entities.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Core.Utilities.Result;
+using Entities.Concrete;
 
 namespace Business.Abstract
 {
     public interface ICustomerService
     {
-        List<Customer> GetAll();
-        void Update(Customer customer);
-        List<Customer> GetAllByCategoryId(int id);
+        IDataResult<List<Customer>> GetAll();
+        IDataResult<Customer> GetById(int id);
+        IResult Update(Customer customer);
+        IResult Delete(Customer customer);
+        IResult Add(Customer customer);
+        IDataResult<List<Customer>> GetAllByCategoryId(int id);
     }
 }

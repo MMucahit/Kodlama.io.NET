@@ -1,11 +1,7 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Concrete
 {
@@ -17,20 +13,38 @@ namespace Business.Concrete
         {
             _customerDal = customerDal;
         }
-    
-        public List<Customer> GetAll()
+
+        public IResult Add(Customer customer)
         {
-            return _customerDal.GetAll();
+            _customerDal.Add(customer);
+            return new SuccessResult();
         }
 
-        public List<Customer> GetAllByCategoryId(int id)
+        public IResult Delete(Customer customer)
         {
-            return _customerDal.GetAll(c => c.CustomerId == id.ToString());
+            _customerDal.Delete(customer);
+            return new SuccessResult();
         }
 
-        public void Update(Customer customer)
+        public IDataResult<List<Customer>> GetAll()
+        {
+            return new SuccessDataResult<List<Customer>>(_customerDal.GetAll(), true, "");
+        }
+
+        public IDataResult<List<Customer>> GetAllByCategoryId(int id)
+        {
+            return new SuccessDataResult<List<Customer>>(_customerDal.GetAll(c => c.CustomerId == id.ToString()), true, "");
+        }
+
+        public IDataResult<Customer> GetById(int id)
+        {
+            return new SuccessDataResult<Customer>(_customerDal.Get(c => c.CustomerId == id.ToString()), true, "");
+        }
+
+        public IResult Update(Customer customer)
         {
             _customerDal.Update(customer);
+            return new SuccessResult();
         }
     }
 }

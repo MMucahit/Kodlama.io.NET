@@ -1,10 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Business.Concrete;
-using Core.Utilities.Result;
 using DataAccess.Concrete.EntityFramework;
-using DataAccess.Concrete.InMemory;
-using Entities.Concrete;
-using Entities.DTOs;
 
 ProductTest();
 //CategoryTest();
@@ -24,7 +20,7 @@ static void ProductTest()
 
     if (result.Success == true)
     {
-        foreach(var item in result.Data)
+        foreach (var item in result.Data)
         {
             Console.WriteLine(item.CategoryName + "-" + item.ProductName);
         }
