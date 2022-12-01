@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "QmB2xE/u7lbVV/0uidHxJbWwblo3Mv2dCOyUgja1GEG8IIpg3ubwhtEmpkkhiRvnqn++vLhZUlfWDBjn+Tvi3g==",
+  "dgSpecHash": "6OExLp/kt40MJZawLovUnOcgKCA4Vgh3hykr8t5edf+Ewn4ZZvajOjyPt6JKDVG67K38QkCPbXgD9gPgDvPQaQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\ConsoleUI\\ConsoleUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
+    "C:\\Users\\MMucahitNAS\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\autofac.extras.dynamicproxy\\6.0.1\\autofac.extras.dynamicproxy.6.0.1.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
