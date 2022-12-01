@@ -27,17 +27,17 @@ namespace Business.Concrete
 
         public IDataResult<List<Category>> GetAll()
         {
-            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(),true,"");
+            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(), true, "");
         }
 
         public IDataResult<List<Category>> GetAllByCategoryId(int id)
         {
-            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c => c.CategoryId == id),true,"");
+            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll(c => c.CategoryId == id), true, "");
         }
 
         public IDataResult<Category> GetById(int id)
         {
-            return new SuccessDataResult<Category>(_categoryDal.Get(c => c.CategoryId == id),true,"");
+            return new SuccessDataResult<Category>(_categoryDal.Get(c => c.CategoryId == id), true, "");
         }
 
         public IResult Update(Category category)
