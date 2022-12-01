@@ -1,12 +1,17 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Business.ValidationRules.FluentValidation;
+using Core.CrossCuttingConcerns.Validation;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
+using FluentValidation;
 
 namespace Business.Concrete
 {
+    // Validation işlemleri burada yazılmaz. Gelen verinin kontrolü. Şifre 5 harfli olmalı gibi
+    // İş kodlaru burada yazılır mesela kişi ehliyet alması için gereksinimleri karşılıyor mu gibi
     // Bir iş sınıfı başka sınıfları new lemez. Constructr Injection yapılır.
     public class ProductManager : IProductService
     {
@@ -21,68 +26,38 @@ namespace Business.Concrete
 
         public IResult Add(Product product)
         {
-            if (product.ProductName.Length < 2)
-            {
-                return new ErrorResult(Messages.ProductLenghtError);
-            }
+            ValidationTool.Validate(new ProductValidator(), product);
+
             _productDal.Add(product);
-            // Parametreli true default geliyor. Birde mesaj dönderiyoruz.
             return new SuccessResult(Messages.ProductAdded);
         }
 
         public IResult Update(Product product)
         {
-            if (product.ProductName == null)
-            {
-                //return new ErrorResult(); // Parametresiz sadece false
-                return new ErrorResult(Messages.ProductRequired);
-            }
             _productDal.Update(product);
-            // Parametresiz sadece true
             return new SuccessResult();
         }
 
         public IDataResult<List<Product>> GetAll()
         {
-            // İş kodları (Yetkisi var mı gibi.)
-            //if("if Someting happen" == "")
-            //{
-            //    return new ErrorDataResult<List<Product>>();
-            //}
-
             return new SuccessDataResult<List<Product>>
                 (_productDal.GetAll(), true, Messages.ProductListed);
         }
 
         public IDataResult<List<Product>> GetAllByCategoryId(int id)
         {
-            //if ("if Someting happen" == "")
-            //{
-            //    return new ErrorDataResult<List<Product>>();
-            //}
-
             return new SuccessDataResult<List<Product>>
                 (_productDal.GetAll(p => p.CategoryId == id), true, Messages.ProductListed);
         }
 
         public IDataResult<Product> GetById(int productId)
         {
-            //if ("if Someting happen" == "")
-            //{
-            //    return new ErrorDataResult<Product>();
-            //}
-
             return new SuccessDataResult<Product>
                 (_productDal.Get(p => p.ProductId == productId), true, Messages.ProductListed);
         }
 
         public IDataResult<List<ProductDetailDto>> GetProductDetails()
         {
-            //if ("if Someting happen" == "")
-            //{
-            //    return new ErrorDataResult<List<ProductDetailDto>>();
-            //}
-
             return new SuccessDataResult<List<ProductDetailDto>>
                 (_productDal.GetProductDetails(), true, Messages.ProductListed);
         }

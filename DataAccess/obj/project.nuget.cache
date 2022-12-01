@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cjctQfFFDZlM0/pUvpHTnILVWAvKuMmDijXsVhgHh0M7jtCexQXu35j0/bqL0dssPhlQ4HPEiotfYTY/S4GMMg==",
+  "dgSpecHash": "HPf8WZvDh5YJ2XjqDjM7h5MUrli0KmLp5HCKzVtGiBD5H7OI/5UtPp1nJYIhDLBGTHeVAGmQWOqK/l67wBFmUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\MMucahitNAS\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

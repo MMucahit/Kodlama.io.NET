@@ -104,6 +104,19 @@
           }
         }
       },
+      "FluentValidation/11.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -2357,6 +2370,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "FluentValidation": "11.4.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
         },
         "compile": {
@@ -2496,6 +2510,29 @@
         "lib/netstandard1.5/Castle.Core.dll",
         "lib/netstandard1.5/Castle.Core.xml",
         "readme.txt"
+      ]
+    },
+    "FluentValidation/11.4.0": {
+      "sha512": "WZJyrNf4suiaI6avVG32W9kmBLC3+V5rDTcLeRJjeU4tDmTyDIOz1459DzCKppXs34YpZg9rCUzDY3M4XxG7Ug==",
+      "type": "package",
+      "path": "fluentvalidation/11.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.11.4.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net5.0/FluentValidation.dll",
+        "lib/net5.0/FluentValidation.xml",
+        "lib/net6.0/FluentValidation.dll",
+        "lib/net6.0/FluentValidation.xml",
+        "lib/net7.0/FluentValidation.dll",
+        "lib/net7.0/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml",
+        "lib/netstandard2.1/FluentValidation.dll",
+        "lib/netstandard2.1/FluentValidation.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -7613,7 +7650,8 @@
       "Autofac >= 6.5.0",
       "Autofac.Extras.DynamicProxy >= 6.0.1",
       "DataAccess >= 1.0.0",
-      "Entities >= 1.0.0"
+      "Entities >= 1.0.0",
+      "FluentValidation >= 11.4.0"
     ]
   },
   "packageFolders": {
@@ -7622,11 +7660,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\Business.csproj",
+      "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\obj\\",
+      "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7643,11 +7681,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj"
             },
-            "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj"
+            "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj"
             }
           }
         }
@@ -7669,6 +7707,10 @@
           "Autofac.Extras.DynamicProxy": {
             "target": "Package",
             "version": "[6.0.1, )"
+          },
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[11.4.0, )"
           }
         },
         "imports": [

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj": {}
+    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj": {
+    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\obj\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.4.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.0, )"

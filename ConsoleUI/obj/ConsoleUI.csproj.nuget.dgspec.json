@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\ConsoleUI\\ConsoleUI.csproj": {}
+    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\ConsoleUI\\ConsoleUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\Business.csproj": {
+    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\obj\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
             "Autofac.Extras.DynamicProxy": {
               "target": "Package",
               "version": "[6.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.4.0, )"
             }
           },
           "imports": [
@@ -76,14 +80,14 @@
         }
       }
     },
-    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\ConsoleUI\\ConsoleUI.csproj": {
+    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\ConsoleUI\\ConsoleUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\ConsoleUI\\ConsoleUI.csproj",
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\ConsoleUI\\ConsoleUI.csproj",
         "projectName": "ConsoleUI",
-        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\ConsoleUI\\ConsoleUI.csproj",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\ConsoleUI\\ConsoleUI.csproj",
         "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\ConsoleUI\\obj\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\ConsoleUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,14 +104,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Business\\Business.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Business\\Business.csproj"
               },
-              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -141,14 +145,14 @@
         }
       }
     },
-    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj": {
+    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\obj\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -177,6 +181,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.4.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -202,14 +210,14 @@
         }
       }
     },
-    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,11 +234,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj"
               },
-              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj"
               }
             }
           }
@@ -270,14 +278,14 @@
         }
       }
     },
-    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj": {
+    "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\MMucahitNAS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MMucahitNAS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -294,8 +302,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\Core\\Core.csproj"
+              "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\Core\\Core.csproj"
               }
             }
           }

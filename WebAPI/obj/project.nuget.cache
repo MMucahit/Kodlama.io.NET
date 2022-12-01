@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IhW6FFfI5DlE/iDBmQBt/eLKH1LQYlNDgHEck2lfOICJxkLRaGzzhWVb9sTcODPx/SXpiLu9hCoqRm9K+tAhpA==",
+  "dgSpecHash": "S1EiUvUQPBugsobK33+DgtWspUgorBYfv+udblfIfDMsoB+jLQ9xdx8+pwr2uKWpWA5RRgQi9rz6fPo8+kRv6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\NLayered\\WebAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\MMucahitNAS\\Desktop\\NLayeredProject\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\autofac\\6.5.0\\autofac.6.5.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
@@ -10,6 +10,7 @@
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
+    "C:\\Users\\MMucahitNAS\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\MMucahitNAS\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",
