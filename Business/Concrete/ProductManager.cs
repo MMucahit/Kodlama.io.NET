@@ -2,6 +2,7 @@
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
+using Core.Utilities.Business;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -14,18 +15,32 @@ namespace Business.Concrete
     // Bir iş sınıfı başka sınıfları new lemez. Constructr Injection yapılır.
     public class ProductManager : IProductService
     {
+        // Bir Manager kendisi hariç Dal ı enjekte edemez.
         IProductDal _productDal;
+        ICategoryService _categoryService;
 
         // ProductManager new lendiğinde IProductDal referansı ister.
         // Bu inMemory de olabilir. Entityframework de olabilir.
-        public ProductManager(IProductDal productDal)
+        public ProductManager(IProductDal productDal, ICategoryService categoryService)
         {
             _productDal = productDal;
+            _categoryService = categoryService;
         }
 
         [ValidationAspect(typeof(ProductValidator))]
         public IResult Add(Product product)
         {
+            //Business codes
+
+            IResult result = BusinessRules.Run(CheckIfProductCountOfCategory(product),
+                CheckIfProductNameExists(product),
+                CheckIfCategoryLimitExceded());
+
+            if (result != null)
+            {
+                return result;
+            }
+
             _productDal.Add(product);
             return new SuccessResult(Messages.ProductAdded);
         }
@@ -64,6 +79,38 @@ namespace Business.Concrete
         {
             _productDal.Delete(product);
             return new SuccessResult("Delete");
+        }
+
+        private IResult CheckIfProductNameExists(Product product)
+        {
+            bool result = _productDal.GetAll(p => p.ProductName == product.ProductName).Any();
+            if (!result)
+            {
+                return new ErrorResult(Messages.ProductNameAlreadtExistError);
+            }
+            return new SuccessResult();
+        }
+
+        private IResult CheckIfProductCountOfCategory(Product product)
+        {
+            int numberOfCategory = _productDal.GetAll(p => p.CategoryId == product.CategoryId).Count;
+            if (numberOfCategory >= 10)
+            {
+                return new ErrorResult(Messages.ProductCountOfCategoryError);
+            }
+
+            return new SuccessResult();
+        }
+
+        private IResult CheckIfCategoryLimitExceded()
+        {
+            int numberOfCategory = _categoryService.GetAll().Data.Count();
+            if (numberOfCategory >= 15)
+            {
+                return new ErrorResult(Messages.CategoryLimitError);
+            }
+
+            return new SuccessResult();
         }
     }
 }

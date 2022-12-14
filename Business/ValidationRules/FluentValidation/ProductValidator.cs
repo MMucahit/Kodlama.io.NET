@@ -9,7 +9,7 @@ namespace Business.ValidationRules.FluentValidation
         {
             //ProductName
             RuleFor(p => p.ProductName).NotNull();
-            RuleFor(p => p.ProductName).MaximumLength(2);
+            RuleFor(p => p.ProductName).MinimumLength(2);
             RuleFor(p => p.ProductName).Must(StartWithA);
 
             //UnitPrice

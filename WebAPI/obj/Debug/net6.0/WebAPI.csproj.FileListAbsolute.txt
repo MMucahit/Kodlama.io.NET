@@ -181,3 +181,4 @@ C:\Users\MMucahitNAS\Desktop\NLayeredProject\WebAPI\obj\Debug\net6.0\refint\WebA
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\WebAPI\obj\Debug\net6.0\WebAPI.pdb
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\WebAPI\obj\Debug\net6.0\WebAPI.genruntimeconfig.cache
 C:\Users\MMucahitNAS\Desktop\NLayeredProject\WebAPI\obj\Debug\net6.0\ref\WebAPI.dll
+C:\Users\MMucahitNAS\Desktop\NLayeredProject\WebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
